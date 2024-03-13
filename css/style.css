@@ -1,0 +1,39 @@
+@font-face{
+    font-family:mainfont;
+    src:url(../fonts/krabby-patty.woff2);
+}
+@font-face{
+    font-family:descriptionfont;
+    src:url(../fonts/parnas-deco.woff2);
+}
+
+:root{
+    --index:calc(1vw+1vh);
+}
+
+
+body{
+ 
+}
+
+
+.navigationcontainer{
+    position: fixed;
+    display: block;
+    background-color: aquamarine;
+    opacity: 0.5;
+    width: 20vw;
+}
+
+.pagecontainer{
+    color: black;
+    font-size: 5vh;
+    font-family: mainfont ,sans-serif;
+    
+}
+
+.icon{
+    height: 5vh;
+    position: relative;
+    top: 1vh;
+}
