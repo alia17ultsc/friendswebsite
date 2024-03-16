@@ -26,6 +26,8 @@ body{
 }
 
 .pagecontainer{
+    display: flex;
+    flex-direction: column;
     color: black;
     font-size: 5vh;
     font-family: mainfont ,sans-serif;
