@@ -1,3 +1,5 @@
+var speed=3000;
+
 var slide=0;
      var slides=document.getElementsByClassName("slidephoto");
     var circles=document.getElementsByClassName("circle")
@@ -29,7 +31,7 @@ function showslides(){
    changeslide=true;
     slides[slide-1].style.display="block";
     circles[slide-1].className+=" active";
-    timer= setTimeout(showslides, 3000);
+    timer= setTimeout(showslides, speed);
 
     
 }
@@ -82,3 +84,11 @@ function clickcircle(slideNumber){
     showslides();
 }
 
+
+function increasespeed(){
+    speed+=500;
+}
+
+function decreasespeed(){
+    speed-=500;
+}

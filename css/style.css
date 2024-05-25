@@ -44,7 +44,14 @@ body{
     top: 1vh;
     margin-left: 1vw;
     margin-right: 1vw;
+    transition: 1.0s ease;
 }
+
+.icon:hover{
+    transform: scale(1.50) rotate(45deg);
+  
+}
+
 
 .title{
     display: flex;
