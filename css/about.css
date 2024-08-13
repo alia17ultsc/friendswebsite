@@ -16,7 +16,9 @@
     margin-bottom: calc(var(--s)*2.5);
 }
 
-
+.titlepage{
+    margin-bottom: 5vh;
+}
 
 .photohorizontal{
   /*  height: calc(var(--s)*8); **/
@@ -78,11 +80,20 @@ span{
 }
 
 .friendsdesc{
-        width: 20vw;
+    width: 23vw;
     font-size: 2vw;
     font-family: descriptionfont, sans-serif;
     border: 0.5vw double mediumslateblue;
     padding: 1vw;
    /* margin: 2vw;*/
-    margin-left: 10vw;
+    margin-left: 7vw;
 }
+
+
+
+
+
+
+
+
+
