@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Friends</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/friends.css">
+    <script src="../javascript/slideshow.js" defer>
+    </script>
+    <script src="../javascript/menuscript.js" defer></script>
+</head>
+<body>
+    <div class="navigationcontainer">
+       <div class="title">
+           <h3 class="changecolor">Alia's Life</h3>
+       </div>
+        <div class="pagecontainer">
+            <a href="index.html" class="mainlink link">
+                <img src="../pictures/star.png" alt="" class="icon"> Main          
+            </a>
+            <a href="friends.html" class="link">
+                 <img src="../pictures/heart.png" alt="" class="icon"> Friends    
+            </a>
+            <a href="about.html" class="link">
+                 <img src="../pictures/flower.png" alt="" class="icon"> About  
+            </a>
+            <a href="timetable.html" class="link">
+            <img src="../pictures/calender.png" alt="" class="icon"> Timetable  
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="titlepage">
+           <h2>My friends</h2>
+       </div>
+         <div class="containerchangespeed">
+             <button onclick="increasespeed()" class="speedbtn">-</button>
+             <span class="currentspeed">3x</span>
+             <button onclick="decreasespeed()" class="speedbtn">+</button>
+         </div>
+          <div class="btnphotobtn">
+          <span>
+          <button class="backbtn arrow" onclick="clickbackbtn()">←</button>
+          </span>
+           <div class="slideshowcont">
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   1/25
+               </div>
+               <img src="../friends_pictures/first.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Nour and I. She's so cuteee and lovelyyyy!!!</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   2/25
+               </div>
+               <img src="../friends_pictures/second.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Mai, Ange and I. These girls on top!!</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   3/25
+               </div>
+               <img src="../friends_pictures/third.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Also Mai, Ange and I. Our trio unbeatable.</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   4/25
+               </div>
+               <img src="../friends_pictures/fourth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">The gang!! Angie, Apple, Yassin and I.</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   5/25
+               </div>
+               <img src="../friends_pictures/fifth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Liza, Angie, Mai and I. Unusual group but still funnn</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   6/25
+               </div>
+               <img src="../friends_pictures/sixth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Now dis the OG gang! Sofia, Liza, Maia and me.     The funnest memories with them.</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   7/25
+               </div>
+               <img src="../friends_pictures/seventh.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Nour and me matching cats in our phone cases!!! How cuteeee!</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   8/25
+               </div>
+               <img src="../friends_pictures/eighth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">AHHHHH MAI MY LOVEEEEE!!!</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   9/25
+               </div>
+               <img src="../friends_pictures/ninth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Ofc me and Nour my loveee! She has my whole heart.</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   10/18
+               </div>
+               <img src="../friends_pictures/tenth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">The iconic duo! Angie and I like no other.</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   11/25
+               </div>
+               <img src="../friends_pictures/eleventh.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Mai and my initials at the beach</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   12/25
+               </div>
+               <img src="../friends_pictures/twelvth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Of course me and my soulmate Nour</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   13/25
+               </div>
+               <img src="../friends_pictures/thirteenth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">This the old gang which was hella fun</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   14/25
+               </div>
+               <img src="../friends_pictures/fourteenth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Me and Nour being silly as always</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   15/25
+               </div>
+               <img src="../friends_pictures/fifteenth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Iconic photoshoots with Mai</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   16/25
+               </div>
+               <img src="../friends_pictures/sixteenth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">The new trio. Angie, Nour and I.</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   17/25
+               </div>
+               <img src="../friends_pictures/seventeenth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Love Nour foreverrrrr</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   18/25
+               </div>
+               <img src="../friends_pictures/eighteenth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Me and Mai at the beach</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   19/25
+               </div>
+               <img src="../friends_pictures/nineteenth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Angie cutie patootie</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   20/25
+               </div>
+               <img src="../friends_pictures/twentieth.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Mai my my heart</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   21/25
+               </div>
+               <img src="../friends_pictures/twenty1st.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Angie goddess</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   22/25
+               </div>
+               <img src="../friends_pictures/twenty2nd.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">AJSJSJJJSJAISJ NOUR IN MY GLASSES!!!</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   23/25
+               </div>
+               <img src="../friends_pictures/twenty3rd.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Silly girls</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   24/25
+               </div>
+               <img src="../friends_pictures/twenty4th.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Another one with Nourin my glasses, how cuteee!!</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   25/25
+               </div>
+               <img src="../friends_pictures/twenty5th.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Love her sm</div>
+           </div>
+            </div>
+            <span>
+            <button class="nextbtn arrow" onclick="clicknextbtn()">→</button>
+            </span>
+            </div>
+        <br>
+        <div style="text-align: center" class="switchslide">
+           <span class="circle" onclick="clickcircle(1)"></span>
+           <span class="circle" onclick="clickcircle(2)"></span>
+           <span class="circle" onclick="clickcircle(3)"></span>
+           <span class="circle" onclick="clickcircle(4)"></span>
+           <span class="circle" onclick="clickcircle(5)"></span>
+           <span class="circle" onclick="clickcircle(6)"></span>
+           <span class="circle" onclick="clickcircle(7)"></span>
+           <span class="circle" onclick="clickcircle(8)"></span>
+           <span class="circle" onclick="clickcircle(9)"></span>
+           <span class="circle" onclick="clickcircle(10)"></span>
+           <span class="circle" onclick="clickcircle(11)"></span>
+           <span class="circle" onclick="clickcircle(12)"></span>
+           <span class="circle" onclick="clickcircle(13)"></span>
+           <span class="circle" onclick="clickcircle(14)"></span>
+           <span class="circle" onclick="clickcircle(15)"></span>
+           <span class="circle" onclick="clickcircle(16)"></span>
+           <span class="circle" onclick="clickcircle(17)"></span>
+           <span class="circle" onclick="clickcircle(18)"></span>
+           <span class="circle" onclick="clickcircle(19)"></span>
+           <span class="circle" onclick="clickcircle(20)"></span>
+           <span class="circle" onclick="clickcircle(21)"></span>
+           <span class="circle" onclick="clickcircle(22)"></span>
+           <span class="circle" onclick="clickcircle(23)"></span>
+           <span class="circle" onclick="clickcircle(24)"></span>
+           <span class="circle" onclick="clickcircle(25)"></span>
+       </div>
+    </div>
+</body>
+</html>
