@@ -1,0 +1,99 @@
+:root{
+    --s: calc( 1vh + 1vw);
+}
+
+.mainp{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+
+.mainpartf{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: calc(var(--s)*2.5);
+}
+
+.titlepage{
+    margin-bottom: 5vh;
+}
+
+.photohorizontal{
+  /*  height: calc(var(--s)*8); **/
+    width: 20vw;
+    margin: 0;
+    padding: 0;
+    transition: opacity 2.0s;
+    opacity: 0.5;
+}
+.photovertical{
+   /* height: calc(var(--s)*10);*/
+    width: 15vw;
+    margin: 0;
+    padding: 0;
+    transition: opacity 2.0s;
+    opacity: 0.5;
+}
+
+span{
+    display: inline-block;
+}
+
+.allphotos{
+   /* display: inline;*/
+    display: flex;
+    flex-direction: row;
+    
+ /*   width: 30vw; */
+    margin-left: 3vw;
+    direction: row;
+}
+.leftphoto{
+    transform: rotate(350deg);
+    z-index: 2;
+    
+}
+
+.rightphoto{
+    position: relative;
+    left: -15vw;
+    transform: rotate(15deg);
+    z-index: 1;
+}
+
+.middlephoto{
+    position: relative;
+    left: -7vw;
+    z-index: 0;
+}
+.middlephoto:hover, .leftphoto:hover, .rightphoto:hover{
+    z-index: 4;
+    opacity: 1;
+}
+
+.extradesc{
+    position: relative;
+    left: -18vw;
+
+}
+
+.friendsdesc{
+    width: 23vw;
+    font-size: 2vw;
+    font-family: descriptionfont, sans-serif;
+    border: 0.5vw double mediumslateblue;
+    padding: 1vw;
+   /* margin: 2vw;*/
+    margin-left: 7vw;
+}
+
+
+
+
+
+
+
+
+

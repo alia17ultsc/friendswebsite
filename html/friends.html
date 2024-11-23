@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Friends</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/friends.css">
+    <script src="../javascript/slideshow.js" defer>
+    </script>
+    <script src="../javascript/menuscript.js" defer></script>
+</head>
+<body>
+    <div class="navigationcontainer">
+       <div class="title">
+           <h3 class="changecolor">Alya's Life</h3>
+       </div>
+        <div class="pagecontainer">
+            <a href="index.html" class="mainlink link">
+                <img src="../pictures/star.png" alt="" class="icon"> Main          
+            </a>
+            <a href="friends.html" class="link">
+                 <img src="../pictures/heart.png" alt="" class="icon"> Friends    
+            </a>
+            <a href="about.html" class="link">
+                 <img src="../pictures/flower.png" alt="" class="icon"> About  
+            </a>
+            <a href="timetable.html" class="link">
+            <img src="../pictures/calender.png" alt="" class="icon"> Timetable  
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="titlepage">
+           <h2>My friends</h2>
+       </div>
+         <div class="containerchangespeed">
+             <button onclick="increasespeed()" class="speedbtn">-</button>
+             <span class="currentspeed">3x</span>
+             <button onclick="decreasespeed()" class="speedbtn">+</button>
+         </div>
+          <div class="btnphotobtn">
+          <span>
+          <button class="backbtn arrow" onclick="clickbackbtn()">←</button>
+          </span>
+          
+           <div class="slideshowcont">
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   1/38
+               </div>
+               <img src="/friendphotos/one.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip"> My birthday with the gang!!!</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   2/38
+               </div>
+               <img src="/friendphotos/two.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Maryam and I sigmas</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   3/38
+               </div>
+               <img src="/friendphotos/three.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Farida and I on the boat</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   4/38
+               </div>
+               <img src="/friendphotos/four.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Sofia, Yassin and I in dahab</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   5/38
+               </div>
+               <img src="/friendphotos/five.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">My birthdayyy!</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   6/38
+               </div>
+               <img src="/friendphotos/six.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Tamara and I. Im so bf material</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   7/38
+               </div>
+               <img src="/friendphotos/seven.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Lisa, Margosha and I at parking</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   8/38
+               </div>
+               <img src="/friendphotos/eight.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">MONKEY MARYAM</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   9/38
+               </div>
+               <img src="/friendphotos/nine.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Last photo with Hasem before he moved</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   10/38
+               </div>
+               <img src="/friendphotos/ten.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Farfar and sofik in dahab</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   11/38
+               </div>
+               <img src="/friendphotos/eleven.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">also us in dahab</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   12/38
+               </div>
+               <img src="/friendphotos/twelve.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">mika and sofa in mcdonald's</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   13/38
+               </div>
+               <img src="/friendphotos/thirteen.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">With Maia and Lisa at the pool on my birthday</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   14/38
+               </div>
+               <img src="/friendphotos/fourteen.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">With Maryam on my birthday</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   15/38
+               </div>
+               <img src="/friendphotos/fifteen.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">With Riad. Love my lil bro</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   16/38
+               </div>
+               <img src="/friendphotos/sixteen.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Sof and I's iconic batroom pics</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   17/38
+               </div>
+               <img src="/friendphotos/seventeen.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Us at our favourite restaurant</div>
+           </div>
+            <div class="slidephoto animation">
+               <div class="slidenumber">
+                   18/38
+               </div>
+               <img src="/friendphotos/eighteen.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">One of my fav trios. Sof Farida and I during summer, miss this so much</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   19/38
+               </div>
+               <img src="/friendphotos/nineteen.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Niky and I on my birthday</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   20/38
+               </div>
+               <img src="/friendphotos/twenty.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Sof, Eva and I at the beach</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   21/38
+               </div>
+               <img src="/friendphotos/twentyone.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Nicole and I during our sleepover</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   22/38
+               </div>
+               <img src="/friendphotos/twentytwo.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Judy and I finally going out</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   23/38
+               </div>
+               <img src="/friendphotos/twentythree.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Such a fun hangout with Judy</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   24/38
+               </div>
+               <img src="/friendphotos/twentyfour.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Tamara and I during the hot summer</div>
+           </div>
+           <div class="slidephoto animation">
+               <div class="slidenumber">
+                   25/38
+               </div>
+               <img src="/friendphotos/twentyfive.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Another favourite trio. Maia, Tamara and I</div>
+           </div>
+               <div class="slidephoto animation">
+               <div class="slidenumber">
+                   26/38
+               </div>
+               <img src="/friendphotos/twentysix.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Us on my birthday</div>
+           </div>
+               <div class="slidephoto animation">
+               <div class="slidenumber">
+                   27/38
+               </div>
+               <img src="/friendphotos/twentyseven.jpg" style="width: 100%" alt="" class="slidepic">
+               <div class="descrip">Judy and I. I love her so much</div>
+           </div>
+           <div class="slidephoto animation">
+            <div class="slidenumber">
+                28/38
+            </div>
+            <img src="/friendphotos/twentyeight.jpg" style="width: 100%" alt="" class="slidepic">
+            <div class="descrip">Us as gangsters in my house</div>
+        </div>
+        <div class="slidephoto animation">
+            <div class="slidenumber">
+                29/38
+            </div>
+            <img src="/friendphotos/twentynine.jpg" style="width: 100%" alt="" class="slidepic">
+            <div class="descrip">Lisa, Nicole and I on halloween</div>
+        </div>
+        <div class="slidephoto animation">
+            <div class="slidenumber">
+                30/38
+            </div>
+            <img src="/friendphotos/thirty.jpg" style="width: 100%" alt="" class="slidepic">
+            <div class="descrip">More pics of us in my house</div>
+        </div>
+        <div class="slidephoto animation">
+            <div class="slidenumber">
+                31/38
+            </div>
+            <img src="/friendphotos/thirtyone.jpg" style="width: 100%" alt="" class="slidepic">
+            <div class="descrip">Youssef and I in domina</div>
+        </div>
+        <div class="slidephoto animation">
+            <div class="slidenumber">
+                32/38
+            </div>
+            <img src="/friendphotos/thirtytwo.jpg" style="width: 100%" alt="" class="slidepic">
+            <div class="descrip">More pics of us</div>
+        </div>
+        <div class="slidephoto animation">
+            <div class="slidenumber">
+                33/38
+            </div>
+            <img src="/friendphotos/thirtythree.jpg" style="width: 100%" alt="" class="slidepic">
+            <div class="descrip">More of Judy and I</div>
+        </div>
+        <div class="slidephoto animation">
+            <div class="slidenumber">
+                34/38
+            </div>
+            <img src="/friendphotos/thirtyfour.jpg" style="width: 100%" alt="" class="slidepic">
+            <div class="descrip">Love silly photos</div>
+        </div>
+        <div class="slidephoto animation">
+            <div class="slidenumber">
+                35/38
+            </div>
+            <img src="/friendphotos/thirtyfive.jpg" style="width: 100%" alt="" class="slidepic">
+            <div class="descrip">Judy, Nadeen and I out together</div>
+        </div>
+        <div class="slidephoto animation">
+            <div class="slidenumber">
+                36/38
+            </div>
+            <img src="/friendphotos/thirtysix.jpg" style="width: 100%" alt="" class="slidepic">
+            <div class="descrip">Us cool asf</div>
+        </div>
+        <div class="slidephoto animation">
+            <div class="slidenumber">
+                37/38
+            </div>
+            <img src="/friendphotos/thirtyseven.jpg" style="width: 100%" alt="" class="slidepic">
+            <div class="descrip">Lisa, Nicole, Eva, Maia, Tamara and I in domina together</div>
+        </div>
+        <div class="slidephoto animation">
+            <div class="slidenumber">
+                38/38
+            </div>
+            <img src="/friendphotos/thirtyeight.jpg" style="width: 100%" alt="" class="slidepic">
+            <div class="descrip">Love this photo</div>
+        </div>
+
+            </div>
+            <span>
+            <button class="nextbtn arrow" onclick="clicknextbtn()">→</button>
+            </span>
+           </div>
+            </div>
+            
+            </div>
+        <br>
+        <div style="text-align: center" class="switchslide">
+            <!--
+            <span class="circle" onclick="clickcircle(1)"></span>
+            <span class="circle" onclick="clickcircle(2)"></span>
+            <span class="circle" onclick="clickcircle(3)"></span>
+            <span class="circle" onclick="clickcircle(4)"></span>
+            <span class="circle" onclick="clickcircle(5)"></span>
+            <span class="circle" onclick="clickcircle(6)"></span>
+            <span class="circle" onclick="clickcircle(7)"></span>
+            <span class="circle" onclick="clickcircle(8)"></span>
+            <span class="circle" onclick="clickcircle(9)"></span>
+            <span class="circle" onclick="clickcircle(10)"></span>
+            <span class="circle" onclick="clickcircle(11)"></span>
+            <span class="circle" onclick="clickcircle(12)"></span>
+            <span class="circle" onclick="clickcircle(13)"></span>
+            <span class="circle" onclick="clickcircle(14)"></span>
+            <span class="circle" onclick="clickcircle(15)"></span>
+            <span class="circle" onclick="clickcircle(16)"></span>
+            <span class="circle" onclick="clickcircle(17)"></span>
+            <span class="circle" onclick="clickcircle(18)"></span>
+            <span class="circle" onclick="clickcircle(19)"></span>
+            <span class="circle" onclick="clickcircle(20)"></span>
+            <span class="circle" onclick="clickcircle(21)"></span>
+            <span class="circle" onclick="clickcircle(22)"></span>
+            <span class="circle" onclick="clickcircle(23)"></span>
+            <span class="circle" onclick="clickcircle(24)"></span>
+            <span class="circle" onclick="clickcircle(25)"></span>
+            <span class="circle" onclick="clickcircle(26)"></span>
+            <span class="circle" onclick="clickcircle(27)"></span>
+            <span class="circle" onclick="clickcircle(28)"></span>
+            <span class="circle" onclick="clickcircle(29)"></span>
+            <span class="circle" onclick="clickcircle(30)"></span>
+            <span class="circle" onclick="clickcircle(31)"></span>
+            <span class="circle" onclick="clickcircle(32)"></span>
+            <span class="circle" onclick="clickcircle(33)"></span>
+            <span class="circle" onclick="clickcircle(34)"></span>
+            <span class="circle" onclick="clickcircle(35)"></span>
+            <span class="circle" onclick="clickcircle(36)"></span>
+            <span class="circle" onclick="clickcircle(37)"></span>
+            <span class="circle" onclick="clickcircle(38)"></span>
+            -->
+       </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+:root{
+    --index:calc(1vw+1vh)
+}
+
+
+@font-face{
+    font-family:mainfont;
+    src:url(../fonts/krabby-patty.woff2);
+}
+@font-face{
+    font-family:descriptionfont;
+    src:url(../fonts/parnas-deco.woff2);
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+
+.navigationcontainer{
+    position: fixed;
+    display: block;
+    background-color: aquamarine;
+    opacity: 0.5;
+    width: 20vw;
+    height: 100vh;
+}
+
+.pagecontainer{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 2.5vw;
+    font-family: mainfont ,sans-serif;
+    
+}
+
+.icon{
+    height: 4vw;
+    position: relative;
+    top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    transition: 1.0s ease;
+}
+
+.icon:hover{
+    transform: scale(1.50) rotate(45deg);
+  
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    font-size: 4vw;
+    color: darkslateblue;
+    text-shadow: 0 0 5vw darkslateblue;
+    font-family: mainfont, sans-serif;
+}
+
+.link{
+    margin-bottom: 2vh;
+}
+
+.link:hover{
+    color: blue;
+}
+
+.main{
+    padding-left: 20vw;
+    width: 78vw;
+    left: 20vw;
+    
+}
+
+.description{
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 5vh;
+
+}
+
+.mainphoto{
+    place-items: left;
+    width: 20vw;
+    transition: 1.0s;
+    margin-bottom: 5vh;
+}
+
+.mainphoto:hover{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+}
+
+.desphoto{
+    place-items: right;
+    font-size: 2vw;
+    font-family: descriptionfont, sans-serif;
+}
+
+
+.aliaphoto{
+    transform: rotate(330deg);
+}
+.sonyaphoto{
+    transform: rotate(20deg);
+}
+.friendsphoto{
+    transform: rotate(345deg);
+
+}
+
+.titlepage{
+    /*margin-left: 20vw;*/
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2{
+    padding: 0;
+    margin: 0;
+    color: darkslateblue;
+    font-size: 5vw;
+    font-family: mainfont;
+    transition: 1.0s;
+}
+
+h2:hover{
+    color: darkblue;
+    text-shadow: 5vw 5vw 8vw darkblue;
+}
+
+
+.mainpart{
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    display: flex;
+    height: 60vh;
+}
+
+
+
+
+
+
+
+
+

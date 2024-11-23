@@ -1,0 +1,140 @@
+:root{
+    --s: calc( 1vh + 1vw);
+}
+@font-face{
+    font-family:mainfont;
+    src:url(../fonts/krabby-patty.woff2);
+}
+@font-face{
+    font-family:descriptionfont;
+    src:url(../fonts/parnas-deco.woff2);
+}
+
+.slidephoto{
+  /*  display: none;*/
+}
+.slidepic{
+    vertical-align: middle;
+    
+}
+
+.switchslide{
+    position: relative;
+    bottom: 20vh;
+}
+
+
+.slideshowcont{
+    max-width: 30vw;
+    position: relative;
+    margin: auto;
+}
+
+.descrip{
+    font-size: calc(var(--s)*1);
+    padding: 3vw 3vh;
+    font-family: descriptionfont, sans-serif;
+    color: #212fb5;
+    width: 100%;
+    text-align: center;
+}
+.slidenumber{
+    font-family: descriptionfont, sans-serif;
+    color: #212fb5;
+    font-size: calc(var(--s)*1.2);
+}
+
+.circle{
+    height: calc(var(--s)*0.7);
+    width: calc(var(--s)*0.7);
+    border-radius: 50%;
+    background-color: #a864ed;
+    display: inline-block;
+    transition: all 0.4s;
+}
+
+.active{
+    background-color: #612e94;
+}
+
+
+.animation{
+    -webkit-animation-name: animation;
+    -webkit-animation-duration: 1s;
+    animation-name: animation;
+    animation-duration: 1s;
+    
+}
+
+@-webkit-keyframes animation{
+    from{opacity: .5}
+    to {opacity: 1}
+}
+@keyframes animation{
+    from{opacity: .5}
+    to {opacity: 1}
+}
+
+
+
+.btnphotobtn{
+    display: flex;
+    
+}
+
+.arrow{
+    position: relative;
+    top: 30vh;
+    border-radius: 50px;
+    background-color: #a864ed;
+    color: #612e94;
+    border-color: #612e94;
+}
+
+.backbtn{
+    margin-left: 20vw;
+}
+
+.nextbtn{
+    margin-right: 20vw;
+}
+
+span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+
+.containerchangespeed{
+    display: flex;
+    justify-content: center;
+}
+
+
+.speedbtn{
+    border-radius: 50px;
+    background-color: #a864ed;
+    color: #612e94;
+    border-color: #612e94;
+}
+
+
+.currentspeed{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    color: #612e94;
+    font-family: mianfont sans-serif;
+    font-size: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
