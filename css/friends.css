@@ -124,6 +124,7 @@ span{
 .currentspeed{
     margin-left: 3vw;
     margin-right: 3vw;
+    width: 3vw;
     color: #612e94;
     font-family: mianfont sans-serif;
     font-size: 2vw;

@@ -1,18 +1,13 @@
 var speed=3000;
 
 var slide=0;
-     var slides=document.getElementsByClassName("slidephoto");
-    var circles=document.getElementsByClassName("circle")
+var slides=document.getElementsByClassName("slidephoto");
 var changeslide=true;
 showslides();
 
 function hideallphotos(){
-;
     for(var i=0; i<slides.length; i++){
         slides[i].style.display="none";
-    }
-      for(var i=0; i<circles.length; i++){
-        circles[i].className=circles[i].className.replace(" active", "");
     }
 }
 
@@ -30,7 +25,6 @@ function showslides(){
     }
    changeslide=true;
     slides[slide-1].style.display="block";
-    circles[slide-1].className+=" active";
     timer= setTimeout(showslides, speed);
 
     
@@ -38,14 +32,6 @@ function showslides(){
 
 var t = 20;
 var timer;
-
-
-function circlesup(){
-    var cont=document.getElementsByClassName("switchslide")[0];
-    cont.style.bottom=t + "vh"
-    t+=2;
-    setTimeout(circlesup, 500);
-}
 
 function clickbackbtn(){
     changeslide=false;
@@ -55,7 +41,6 @@ function clickbackbtn(){
         slide=slide-1;
     hideallphotos();
     slides[slide-1].style.display="block";
-    circles[slide-1].className+=" active";
     clearTimeout(timer);
     showslides();
 }
@@ -68,27 +53,27 @@ function clicknextbtn(){
         slide=slide+1;
     hideallphotos();
     slides[slide-1].style.display="block";
-    circles[slide-1].className+=" active";
      clearTimeout(timer);
     showslides();
     
 }
 
-
-function clickcircle(slideNumber){
-    slide=slideNumber;
-    hideallphotos();
-    slides[slide-1].style.display="block";
-    circles[slide-1].className+=" active";
-     clearTimeout(timer);
-    showslides();
-}
-
-
 function increasespeed(){
+    if (speed<4000){
     speed+=500;
+    showspeed();
+    }
 }
 
 function decreasespeed(){
+    if (speed>500){
     speed-=500;
+    showspeed();
+    }
+}
+
+function showspeed(){
+    var showspeedtext=document.getElementsByClassName("currentspeed")[0];
+    showspeedtext.textContent=`${speed/1000}x`;
+
 }
